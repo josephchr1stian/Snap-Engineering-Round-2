@@ -1,0 +1,12 @@
+Hello
+
+    I am taking inspiration from Arena, Twitter, Tumblr, etc
+        The aim of My Dearest is to allow users to upload things that are dear to them, and write about why they hold
+    them dear to their heart. To write about something allows one to solidify their thoughts, and express their thoughts
+    with greater attention. Users will be allowed to upload elements, and tag them as to how they care about them.
+    They will function as blocks, similar to the website Are.na.
+        For example
+
+        Book: The Myth of Sisyphus
+        Relation: Self
+        Note: The Myth of Sisyphus allows
