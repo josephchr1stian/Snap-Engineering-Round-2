@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", showCards);
 
 function quoteAlert()
 {
-    console.log("Button Clicked!")
+    console.log("quote button clicked")
     alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");
 }
 
@@ -101,4 +101,15 @@ function removeLastCard()
 {
     titles.pop(); // Remove last item in titles array
     showCards(); // Call showCards again to refresh
+}
+
+function addCard()
+{
+    /*const nextCard = templateCard.cloneNode(true); // Copy the template card
+    cardContainer.appendChild(nextCard); // Add new card to the container
+    titles.push(nextCard);*/
+    console.log("addCard Clicked");
+    let newTitle = prompt("Tile title", 'untitled.'); // Get the title from the user
+
+
 }

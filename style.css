@@ -2,10 +2,11 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .main-header {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: white;
     padding-bottom: 10px;
 }
 
@@ -13,7 +14,7 @@ body {
     text-align: left;
     margin: 0;
     font-size: 7em;
-    font-family: "Helvetica";
+    font-family: "Helvetica", serif;
     font-weight: normal;
     color: black;
 }
@@ -35,7 +36,7 @@ body {
 
 .card-content {
     padding: 20px;
-    font-family: "Courier New";
+    font-family: "Courier New", serif;
     color: #777;
 }
 
@@ -50,10 +51,10 @@ body {
 }
 
 .footer {
-    display: flex;
+    display: flex ;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 10px;
+    background-color: white;
+    padding: 30px;
 }
 
 button {
