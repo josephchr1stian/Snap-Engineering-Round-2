@@ -5,8 +5,11 @@ Hello
     them dear to their heart. To write about something allows one to solidify their thoughts, and express their thoughts
     with greater attention. Users will be allowed to upload elements, and tag them as to how they care about them.
     They will function as blocks, similar to the website Are.na.
+        I have taken inspiration from the text, stuff by daniel miller. I am of the philosophy that things are not just things,
+        they are more than that, because we hold them to be so. They can serve as symbols, extensions of ourselves.
         For example
 
         Book: The Myth of Sisyphus
         Relation: Self
         Note: The Myth of Sisyphus allows
+

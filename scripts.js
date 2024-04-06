@@ -25,19 +25,49 @@
 
 "use strict";
 
-const RICK_URL    = "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMDY4MDA3Ny9vcm" +
-    "lnaW5hbF83ZGRiYjA4MWU5ZGJhODgzM2ZhNjExNjI4NWI3MmE1Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImh" +
-    "laWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImZsYXR" +
-    "0ZW4iOnsiYmFja2dyb3VuZCI6eyJyIjoyMDMsImciOjIwMywiYiI6MjAzfX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ=="
+//These are the tags every block may hold
+const TAGS = {
+    SELF:"self",
+    RELATION :"relation",
+    EXTENSION: "extension",
+    REFLECTION:"reflection",
+    BLISS:"bliss"
+};
+
+
+function BlockConstructor(title, proof, imageURL, tags)
+{
+    this.title = title || "untitled.";
+    this.proof = proof || "Inexplicable";
+    this.imageURL = imageURL || "https://d2w9rnfcy7mm78.cloudfront.net/27416928/original_5c5fbc7fcb1fd0f6a0b65ae6bae53484.png?1712438925?bc=0";
+    this.tags = tags || [];
+}
+// The Block will hold the title, summary, tag, and URL
+
+const block = [
+    title: "The"
+
+]
+
+
+
+const imageSrcURLS =[
+    {title: "Rick Owens: Footwear", url: "https://d2w9rnfcy7mm78.cloudfront.net/10680077/original_7ddbb081e9dba8833fa6116285b72a57.jpg?1612924929?bc=0"},
+    {title: "The Stranger", url: "https://d2w9rnfcy7mm78.cloudfront.net/17908954/original_b23716b6200f2ebf77b2742f23670228.jpg?1662414459?bc=0"},
+    {title: "Curb Your Enthusiasm", url: "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg"},
+    {title: "Francis Bacon", url: "https://d2w9rnfcy7mm78.cloudfront.net/15647325/original_f37d5efa274f4becdd4771f2771701e2.png?1647632278?bc=0"},
+];
+
+const RICK_URL    = "https://d2w9rnfcy7mm78.cloudfront.net/10680077/original_7ddbb081e9dba8833fa6116285b72a57.jpg?1612924929?bc=0";
 const CAMUS_URL = "https://d2w9rnfcy7mm78.cloudfront.net/17908954/original_b23716b6200f2ebf77b2742f23670228.jpg?1662414459?bc=0";
 const CURB_POSTER_URL = "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
-const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
+const BACON_URL = "https://d2w9rnfcy7mm78.cloudfront.net/15647325/original_f37d5efa274f4becdd4771f2771701e2.png?1647632278?bc=0";
 
 // This is an array of strings (TV show titles)
 let titles = [
-    "Albert Camus: The Stranger",
+    "The Stranger",
     "Curb Your Enthusiasm",
-    "East Los High",
+    "Francis Bacon",
     "Rick Owens: Footwear"
 ];
 // Your final submission should have much more data than this, and 
@@ -60,7 +90,7 @@ function showCards() {
         } else if (i == 1) {
             imageURL = CURB_POSTER_URL;
         } else if (i == 2) {
-            imageURL = EAST_LOS_HIGH_POSTER_URL;
+            imageURL = BACON_URL;
         }
         else if (i == 3)
         {

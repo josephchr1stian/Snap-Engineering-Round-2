@@ -12,9 +12,10 @@ body {
 
 .title {
     text-align: left;
+    padding-left: 30px;
     margin: 0;
-    font-size: 7em;
-    font-family: "Helvetica", serif;
+    font-size: 4em;
+    font-family: "Helvetica Neue", serif;
     font-weight: normal;
     color: black;
 }
@@ -23,34 +24,41 @@ body {
     display: flex;
     justify-content: center;
     margin: 20px;
+    overflow: hidden;
 }
 
 .card {
     width: 300px;
-    height: 350px;
-    border: 1px solid #ccc;
+    height: auto;
+    border: 1px solid #808080;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 5px;
 }
 
+/* Card title*/
 .card-content {
     padding: 20px;
     font-family: "Courier New", serif;
-    color: #777;
+    color: #eaeaea;
 }
 
-.card-content h2 {
+
+
+.card-content h2 { /*Card Caption*/
     margin-top: 0;
     font-size: 20px;
 }
 
+
 .card img {
-    width: 100%;
-    height: auto;
+    width: 100%; /*Fit container*/
+    height: auto;  /*Maintain Aspect Ratio*/
+    display: block; /*Display Bloc to erase extra space*/
 }
 
 .footer {
+    margin-top: auto;
     display: flex ;
     justify-content: center;
     background-color: white;
