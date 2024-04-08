@@ -3,27 +3,28 @@
 [
   { "name": "Rick Owens: Footwear",
     "url": "https://d2w9rnfcy7mm78.cloudfront.net/10680077/original_7ddbb081e9dba8833fa6116285b72a57.jpg?1612924929?bc=0",
-    "proof": "",
+    "proof": "Wearing a uniform, breaking the monotony ",
     "id": 0,
     "tags": [],
     "date": "2024-07-07"
   },
   { "name": "The Stranger",
     "url": "https://d2w9rnfcy7mm78.cloudfront.net/17908954/original_b23716b6200f2ebf77b2742f23670228.jpg?1662414459?bc=0",
-    "proof": "",
+    "proof": "One of the most interesting novels I've had the pleasure of reading. Finds the balance of the extreme and mundane.",
     "id": 1,
+    "tags": [],
     "date": "2024-07-07"
   },
   { "name": "Curb Your Enthusiasm",
     "url": "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg",
-    "proof": "",
+    "proof": "Larry David is a genius, being the anti hero we all wish we could be in day to day life.",
     "id": 2,
     "tags": [],
     "date": "2024-07-07"
   },
   {"name": "Francis Bacon",
     "url": "https://d2w9rnfcy7mm78.cloudfront.net/15647325/original_f37d5efa274f4becdd4771f2771701e2.png?1647632278?bc=0",
-    "proof": "",
+    "proof": "Visceral, guttural, ethereal. One of the greatest painters of the 20th century. Art with meaning.",
     "id": 3,
     "tags": [],
     "date": "2024-07-07"
