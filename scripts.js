@@ -24,6 +24,7 @@
  */
 
 "use strict";
+import links from './blocks.json'
 
 //These are the tags every block may hold
 const TAGS = {
@@ -33,24 +34,26 @@ const TAGS = {
     REFLECTION:"reflection",
     BLISS:"bliss"
 };
+const currentDate = new Date().toDateString();
 
-
-function BlockConstructor(title, proof, imageURL, tags)
+function Block(name, proof, imageURL, id,tags, date)
 {
-    this.title = title || "untitled.";
+    this.name = name || "untitled.";
     this.proof = proof || "Inexplicable";
     this.imageURL = imageURL || "https://d2w9rnfcy7mm78.cloudfront.net/27416928/original_5c5fbc7fcb1fd0f6a0b65ae6bae53484.png?1712438925?bc=0";
     this.tags = tags || [];
+    this.id =
+    this.date = currentDate;
 }
 // The Block will hold the title, summary, tag, and URL
 
-const block = [
-    title: "The"
+function createBlocks() {
+    //for (let i = 0; i <)
 
-]
+};
 
 
-
+// We will hold all the urls along with the title
 const imageSrcURLS =[
     {title: "Rick Owens: Footwear", url: "https://d2w9rnfcy7mm78.cloudfront.net/10680077/original_7ddbb081e9dba8833fa6116285b72a57.jpg?1612924929?bc=0"},
     {title: "The Stranger", url: "https://d2w9rnfcy7mm78.cloudfront.net/17908954/original_b23716b6200f2ebf77b2742f23670228.jpg?1662414459?bc=0"},
@@ -79,7 +82,10 @@ function showCards() {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
     const templateCard = document.querySelector(".card");
-    
+
+    //for(let i = 0; i < links.en)
+
+
     for (let i = 0; i < titles.length; i++) {
         let title = titles[i];
         // This part of the code doesn't scale very well! After you add your
@@ -139,6 +145,7 @@ function addCard()
     cardContainer.appendChild(nextCard); // Add new card to the container
     titles.push(nextCard);*/
     console.log("addCard Clicked");
+
     let newTitle = prompt("Tile title", 'untitled.'); // Get the title from the user
 
 
