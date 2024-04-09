@@ -2,39 +2,10 @@
 <html >
 
 
-<body>
-    <div class = "text"></div>
-    <script>
-        const div = document.querySelector(".text");
-        const text = "Hello\n" +
-            "\n" +
-            "    I am taking inspiration from Arena, Twitter, Tumblr, etc.\n" +
-            "        The aim of My Dearest is to allow users to upload things that are dear to them, and write about why they hold\n" +
-            "    them dear to their heart. To write about something allows one to solidify their thoughts, and express their thoughts\n" +
-            "    with greater attention. Users will be allowed to upload elements, and tag them as to how they care about them.\n" +
-            "    They will function as blocks, similar to the website Are.na.\n" +
-            "        I have taken inspiration from the text, stuff by daniel miller. I am of the philosophy that things are not just things,\n" +
-            "        they are more than that, because we hold them to be so. They can serve as symbols, extensions of ourselves.\n";
-
-        function typingEffect(element, text, i=0){
-            element.textContent += text[i];
-            if (i ==0 )
-                element.textContent = "";
-            if ( i = text.length-1){
-                return;
-            }
-            setTimeout(()=> typingEffect(element, text, i + 1),50
-            );
-        }
-        typingEffect(div,text,0);
-    </script>
-</body>
-
 <head>
     <title> My Dearest</title>
     <meta name="description" content="The things I hold dear to my heart">
     <link rel="stylesheet" href="style.css" />
-
 </head>
 
 <body>
@@ -54,9 +25,9 @@
                 <option value="bliss"> Bliss </option>
             </select>
             <button class="button2" onclick="showRandom()"> Random </button>
-
-
+            <button class="hamburger-menu"> &#x02234;</button>
         </div>
+
     </header>
     <div id="card-container">
         

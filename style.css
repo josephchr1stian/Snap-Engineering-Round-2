@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+
 }
 
 .main-header {
@@ -10,19 +11,39 @@ body {
     background-color: white;
     padding-bottom: 10px;
     justify-content: center;
+}
 
+.hamburger-menu {
+    display: none; /* Initially hide the hamburger menu icon */
 
+    margin-left: auto;
+    font-size: 2em;
+
+}
+
+@media screen and (max-width: 600px) {
+    /* Hide regular buttons when screen size is small */
+    .button2 {
+        display: none;
+    }
+    #DropdownFilters {
+        display: none;
+    }
+
+    /* Show hamburger menu icon when screen size is small */
+    .hamburger-menu {
+        display: inline-block;
+    }
 }
 
 .top-buttons{
-    margin-right: auto;
+    margin-left: auto;
+
     padding-top: 2%;
     padding-right: 2%;
-}
-.top-buttonsAlt{
-    margin-right: auto;
-    padding-top: 2%;
-    padding-right: 2%;
+    color: black;
+    border-color: white;
+
 }
 
 .title {
@@ -69,8 +90,6 @@ body {
     padding: 20px;
     font-family: "Courier New", serif;
     color: #eaeaea;
-
-
 }
 
 

@@ -241,3 +241,25 @@ function showRandom()
     })
 
 }
+
+document.addEventListener('DOMContentLoaded', function()
+{
+    const dropDown = document.getElementById('DropdownFilters');
+    const randomButton = document.querySelector('.button2');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    if(hamburgerMenu){
+        hamburgerMenu.addEventListener('click', function ()
+        {
+            if(randomButton.style.display === 'none' ){
+                randomButton.display = 'flex';
+                dropDown.display = 'flex';
+            }
+            else
+            {
+                randomButton.display = 'none';
+                dropDown.display = 'none';
+            }
+        });
+    }
+
+});
