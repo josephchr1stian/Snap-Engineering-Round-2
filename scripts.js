@@ -24,6 +24,7 @@
  */
 
 "use strict";
+
 //import
 
 // Create a promise from the JSON file to access the data
@@ -60,7 +61,7 @@ class myBlock {
         });
         this.name = name || "untitled.";
         this.proof = proof || "Inexplicable";
-        this.imageURL = imageURL || "https://d2w9rnfcy7mm78.cloudfront.net/10680077/original_7ddbb081e9dba8833fa6116285b72a57.jpg?1612924929?bc=0";
+        this.imageURL = imageURL || "https://d2w9rnfcy7mm78.cloudfront.net/27416928/original_5c5fbc7fcb1fd0f6a0b65ae6bae53484.png?1712438925?bc=0";
         this.tags = tags || null;
         this.date = date;
     }
@@ -169,12 +170,11 @@ function addCard()
         let length = blocks.length;
         let name  = prompt("Tile title", 'untitled.'); // Get the title from the user
         let proof = prompt("Proof:", ''); // Get the title from the user
-        let imageURL= prompt("Image URL:", 'untitled.'); // Get the title from the user
+        let imageURL= prompt("Image URL:", ''); // Get the title from the user
         let id = length;
         let tags = "";
         let newBlock = new myBlock(name, proof, imageURL,id, tags, currentDate);
         blocks.push(newBlock.toJSON());
-
         //blocks.write(name, proof, imageURL, id, tags);
         showCards();
     }).catch(error => {
@@ -206,6 +206,31 @@ function filterCards(filter) {
             console.log("Block is :", newBlock.name,"Tags are:" ,newBlock.tags, "Filter selected:", filter)
             if (newBlock.tags.includes(filter))
             {
+                const nextCard = templateCard.cloneNode(true); // Copy the template card
+                editCardContent(nextCard,newBlock); // get the next card, take the jason
+                cardContainer.appendChild(nextCard); // Add new card to the container
+            }
+        });
+    }).catch(error => {
+        console.error("Error Fetching", error);
+    })
+
+}
+
+function showRandom()
+{
+    const cardContainer = document.getElementById("card-container");
+    cardContainer.innerHTML = "";
+    const templateCard = document.querySelector(".card");
+    let target =  Math.floor(Math.random() * 10);
+    console.log(target);
+    //for(let i = 0; i < links.en)
+    blockDataPromise.then( blocks =>{
+        console.log("Fetched Data:",target, "HEELLLLLLLLLPLPPPPPPPPPPPPP");
+        blocks.forEach( block =>  {
+            if (block.id == target)
+            {
+                const newBlock = fromJSON(block);
                 const nextCard = templateCard.cloneNode(true); // Copy the template card
                 editCardContent(nextCard,newBlock); // get the next card, take the jason
                 cardContainer.appendChild(nextCard); // Add new card to the container
