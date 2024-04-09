@@ -5,7 +5,7 @@
     <title> My Dearest</title>
     <meta name="description" content="The things I hold dear to my heart">
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
+
 </head>
 
 <body>
@@ -16,14 +16,23 @@
             <h2 class="title2"> an ode to things we hold close </h2>
         </div>
         <div>
-            <button class="button2" onclick="setFilter()"> All Blocks </button>
-            <div id="myDropdown" class="dropdown-content">
-                <button onclick="filterCards('self')"> Self</button>
-                <button onclick="filterCards('relation')">Relation</button>
-                <button onclick="filterCards('extension')">Extension</button>
-                <button onclick="filterCards('bliss')">Bliss</button>
-                <button onclick="filterCards('reflection')">Relation</button>
-                </div>
+            <select id="DropdownFilters"> Filters
+                <option value="all"> All</option>
+                <option value="self"> Self </option>
+                <option value="extension"> Extension </option>
+                <option value="relation"> Relation </option>
+                <option value="reflection"> Reflection </option>
+                <option value="bliss"> Bliss </option>
+            </select>
+
+<!--            <button class="button2" onclick="setFilter()"> All Blocks </button>-->
+<!--            <div id="myDropdown" class="dropdown-content">-->
+<!--                <button onclick="filterCards('self')"> Self</button>-->
+<!--                <button onclick="filterCards('relation')">Relation</button>-->
+<!--                <button onclick="filterCards('extension')">Extension</button>-->
+<!--                <button onclick="filterCards('bliss')">Bliss</button>-->
+<!--                <button onclick="filterCards('reflection')">Relation</button>-->
+<!--                </div>-->
         </div>
     </header>
     <div id="card-container">
@@ -40,15 +49,16 @@
     </div>
     <div class="footer">
         <button onclick="quoteAlert();">
-            Get A Quote!
+            Quote
         </button>
         <button onclick="removeLastCard();">
-            Remove A Card!
+            Remove
         </button>
         <button onclick="addCard()">
             New Entry
         </button>
     </div>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 
 </html>

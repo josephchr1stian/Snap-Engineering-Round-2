@@ -184,19 +184,14 @@ function addCard()
     console.log("addCard Clicked");
 }
 
-
-function setFilter()
+document.getElementById("DropdownFilters").addEventListener('change', (event) =>
 {
-    let filter =
-    blockDataPromise.then( blocks =>{
-        blocks.pop(); // Remove last item in titles array
+    const selectedOption = event.target.value;
+    if (selectedOption == "all")
         showCards();
-    }).catch(error => {
-        console.error("Error Fetching", error);
-        showCards(); // Call showCards again to refresh
-    })
-}
-
+    else
+        filterCards(selectedOption);
+    });
 
 function filterCards(filter) {
     const cardContainer = document.getElementById("card-container");
