@@ -1,33 +1,91 @@
 
-
 [
   { "name": "Rick Owens: Footwear",
     "url": "https://d2w9rnfcy7mm78.cloudfront.net/10680077/original_7ddbb081e9dba8833fa6116285b72a57.jpg?1612924929?bc=0",
-    "proof": "Wearing a uniform, breaking the monotony ",
+    "proof": "Wearing a uniform, breaking the monotony; the ethos of Rick Owens is one that can be applied to almost every path in life. Throwing yourself at your goals, over and over. Build. Build. Build.",
     "id": 0,
-    "tags": [],
+    "tags": ["self", "extension"],
     "date": "2024-07-07"
   },
   { "name": "The Stranger",
     "url": "https://d2w9rnfcy7mm78.cloudfront.net/17908954/original_b23716b6200f2ebf77b2742f23670228.jpg?1662414459?bc=0",
     "proof": "One of the most interesting novels I've had the pleasure of reading. Finds the balance of the extreme and mundane.",
     "id": 1,
-    "tags": [],
+    "tags": ["reflection", "bliss"],
     "date": "2024-07-07"
   },
   { "name": "Curb Your Enthusiasm",
     "url": "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg",
     "proof": "Larry David is a genius, being the anti hero we all wish we could be in day to day life.",
     "id": 2,
-    "tags": [],
+    "tags": ["bliss"],
     "date": "2024-07-07"
   },
   {"name": "Francis Bacon",
     "url": "https://d2w9rnfcy7mm78.cloudfront.net/15647325/original_f37d5efa274f4becdd4771f2771701e2.png?1647632278?bc=0",
     "proof": "Visceral, guttural, ethereal. One of the greatest painters of the 20th century. Art with meaning.",
     "id": 3,
-    "tags": [],
+    "tags": ["reflection", "bliss"],
     "date": "2024-07-07"
+  },
+  {"name": "Disintegration Loops",
+    "url": "https://upload.wikimedia.org/wikipedia/en/7/79/DisLoop_1.jpg",
+    "proof": "Born from tragedy, Basinski captures feelings of solace and creates soundtrack that elicits feelings of hope. ",
+    "id": 4,
+    "tags": ["reflection", "bliss"],
+    "date": "2024-07-08"
+  },
+  {"name": "The Holdovers",
+    "url": "https://m.media-amazon.com/images/S/pv-target-images/d4dee8164233fdbd330bb40d8f401de8dda63250dfb10328dc7567242fad05ac.jpg",
+    "proof": " This film made me reflect on the importance of leading with compassion. You never know the limit of the impact you could have.",
+    "id": 5,
+    "tags": ["relation", "reflection", "self"],
+    "date": "2023-12-22"
+  },
+  {"name": "Margiela: Tabi",
+    "url": "https://d2w9rnfcy7mm78.cloudfront.net/1754548/original_62f1345f2c950fe0801efa374068cf38?1518543831?bc=1",
+    "proof": " Maison Margiela takes advantage of texture to tell a story like no other fashion house. They explore the fringe possiblities of garment construction in a way that is playful yet bold.",
+    "id": 6,
+    "tags": ["relation", "reflection", "self", "extension"],
+    "date": "2024-07-08"
+  },
+  {"name": "Aphex Twin",
+    "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxODQyNzUzOS9vcmlnaW5hbF8yMjRmYTYyYzk2ZWU2M2QzNGVkZTkyZDhkZWIxNTI2NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiaGVpZ2h0Ijo2MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NjV9LCJmbGF0dGVuIjp7ImJhY2tncm91bmQiOnsiciI6MjAzLCJnIjoyMDMsImIiOjIwM319LCJqcGVnIjp7InF1YWxpdHkiOjY1fSwicm90YXRlIjpudWxsfX0=",
+    "proof": " Aphex Twin is a true display of what it means to be a master of your craft. The breadth of his catalogue shows his ability to create timeless work, with an aesthetic that permeates pop culture to this day. ",
+    "id": 7,
+    "tags": ["bliss", "reflection", "self"],
+    "date": "2024-07-08"
+  },
+  {"name": "The Bear",
+    "url": "https://d2w9rnfcy7mm78.cloudfront.net/22948708/original_281d2debf43d8d327390b2df2fd9d712.png?1691079175?bc=0",
+    "proof": "The Bear encapsulates the intensity of working in a high stakes fast paced  kitchen environment. It deals with themes of sacrifice and impostor syndrome that are inherent to elevating ones craft. ",
+    "id": 8,
+    "tags": ["relation", "reflection", "self"],
+    "date": "2023-06-12"
+  },
+  {
+    "name": "The Hellp: Vol 1",
+    "url": "https://f4.bcbits.com/img/a1891727842_10.jpg",
+    "proof": "Bruce Springsteen meets The Strokes. Country meets Indie Sleaze. The Hellp breathes new life into a scene that is on the rise again, reminding us to define your path and goals. The lyrics are introspective and emotional, and bring me to a place where I am forced to reflect on who I am.",
+    "id": 9,
+    "tags": ["bliss", "reflection"],
+    "date": "2024-07-22"
+  },
+  {
+    "name": "Banh Mi My Tho",
+    "url": "https://res.cloudinary.com/the-infatuation/image/upload/q_auto,f_auto/cms/BanhMiMyTho_SpecialComboBanhMi_MattGendal_Alhambra-006",
+    "proof": "I love bringing my friends and family here. I really appreciate when you can notice care put into certain recipes and preparation. The texture of the baguette, the flavors in the meat and pate, and the crispness of the vegetables make this one of the best sandwiches around.  ",
+    "id": 10,
+    "tags": ["bliss", "relation"],
+    "date": "2024-02-22"
+  },
+  {
+    "name": "Vans Authentic",
+    "url": "https://images.vans.com/is/image/VansEU/VN0A38ENMR2-ALT2?$PDP-MEDIA-SET-PREVIEW-RESOLUTION$",
+    "proof": "I never expected this shoe to become the basis for my everyday uniform. These shoes serve me in a practical sense; I've taken them on countless walks, and on multiple vacations. I love what they represent. The Californian connotation, the punk roots.",
+    "id": 11,
+    "tags": ["self", "extension"],
+    "date": "2022-10-17"
   }
-
 ]
+

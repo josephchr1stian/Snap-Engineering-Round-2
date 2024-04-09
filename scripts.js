@@ -68,10 +68,10 @@ class myBlock {
     toJSON() { // Return the properties to JSON
         return {
             name: this.name,
+            url:this.imageURL,
             proof: this.proof,
-            imageURL:this.imageURL,
-            tags:this.tags,
             id:this.id,
+            tags:this.tags,
             date:this.date
         }
 }
@@ -152,6 +152,7 @@ function removeLastCard()
 
     blockDataPromise.then( blocks =>{
         blocks.pop(); // Remove last item in titles array
+        showCards();
     }).catch(error => {
         console.error("Error Fetching", error);
     showCards(); // Call showCards again to refresh
@@ -168,11 +169,13 @@ function addCard()
         let length = blocks.length;
         let name  = prompt("Tile title", 'untitled.'); // Get the title from the user
         let proof = prompt("Proof:", ''); // Get the title from the user
-        let imageURL= prompt("", 'untitled.'); // Get the title from the user
+        let imageURL= prompt("Image URL:", 'untitled.'); // Get the title from the user
         let id = length;
         let tags = "";
         let newBlock = new myBlock(name, proof, imageURL,id, tags, currentDate);
-        blocks.push(newBlock.toJSON()); // Remove last item in titles array
+        blocks.push(newBlock.toJSON());
+
+        //blocks.write(name, proof, imageURL, id, tags);
         showCards();
     }).catch(error => {
     console.error("Error Fetching", error);
