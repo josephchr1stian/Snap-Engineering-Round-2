@@ -6,8 +6,11 @@ body {
 }
 
 .main-header {
+    display: flex;
     background-color: white;
     padding-bottom: 10px;
+    justify-content: space-between;
+
 }
 
 .title {
@@ -16,7 +19,16 @@ body {
     margin: 0;
     font-size: 4em;
     font-family: "Helvetica Neue", serif;
-    font-weight: normal;
+    font-weight: bold;
+    color: black;
+}
+.title2 {
+    text-align: left;
+    padding-left: 30px;
+    margin: 0;
+    font-size: 2em;
+    font-family: "Helvetica Neue", serif;
+    font-weight: bold;
     color: black;
 }
 
@@ -77,6 +89,23 @@ button {
     border-radius: 10px;
     color: #ffffff;
     font-size: 22px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 0px;
+}
+
+.button2 {
+    font-family: "Helvetica Neue";
+    text-align: center;
+    background-color: #000000;
+    border-radius: 0px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+
+    color: #ffffff;
+    font-size: 26px;
     cursor: pointer;
     margin: 5px;
 }

@@ -26,7 +26,7 @@
 "use strict";
 //import
 
-
+// Create a promise from the JSON file to access the data
 const blockDataPromise = fetch('blocks.json')
     .then(response => {
         // Check if response is OK
@@ -182,4 +182,42 @@ function addCard()
     showCards();
 });
     console.log("addCard Clicked");
+}
+
+
+function setFilter()
+{
+    let filter =
+    blockDataPromise.then( blocks =>{
+        blocks.pop(); // Remove last item in titles array
+        showCards();
+    }).catch(error => {
+        console.error("Error Fetching", error);
+        showCards(); // Call showCards again to refresh
+    })
+}
+
+
+function filterCards(filter) {
+    const cardContainer = document.getElementById("card-container");
+    cardContainer.innerHTML = "";
+    const templateCard = document.querySelector(".card");
+    //for(let i = 0; i < links.en)
+    blockDataPromise.then( blocks =>{
+        console.log("Fetched Data:",blocks);
+        blocks.forEach( block =>  {
+
+            const newBlock = fromJSON(block);
+            console.log("Block is :", newBlock.name,"Tags are:" ,newBlock.tags, "Filter selected:", filter)
+            if (newBlock.tags.includes(filter))
+            {
+                const nextCard = templateCard.cloneNode(true); // Copy the template card
+                editCardContent(nextCard,newBlock); // get the next card, take the jason
+                cardContainer.appendChild(nextCard); // Add new card to the container
+            }
+        });
+    }).catch(error => {
+        console.error("Error Fetching", error);
+    })
+
 }
