@@ -244,20 +244,26 @@ function showRandom()
 
 document.addEventListener('DOMContentLoaded', function()
 {
-    const dropDown = document.getElementById('DropdownFilters');
-    const randomButton = document.querySelector('.button2');
+    const dropDown = document.getElementById("DropdownFilters");
+    const randomButton = document.querySelector(".button2");
     const hamburgerMenu = document.querySelector('.hamburger-menu');
-    if(hamburgerMenu){
+    if(hamburgerMenu && randomButton && dropDown)
+    {
         hamburgerMenu.addEventListener('click', function ()
         {
-            if(randomButton.style.display === 'none' ){
-                randomButton.display = 'flex';
-                dropDown.display = 'flex';
+            console.log("hamClick");
+            console.log(randomButton.style.display);
+            if(randomButton.style.display === '' || dropDown.style.display === '' )
+            {
+                randomButton.style.display = 'flex';
+                dropDown.style.display = 'flex';
+                console.log(randomButton.style.display);
+                //hamburgerMenu.style.display = 'none';
             }
             else
             {
-                randomButton.display = 'none';
-                dropDown.display = 'none';
+                randomButton.style.display = '';
+                dropDown.style.display = '';
             }
         });
     }

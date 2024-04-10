@@ -21,7 +21,7 @@ body {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     /* Hide regular buttons when screen size is small */
     .button2 {
         display: none;
