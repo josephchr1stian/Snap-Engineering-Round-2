@@ -171,7 +171,9 @@ function addCard()
         let proof = prompt("Proof:", ''); // Get the title from the user
         let imageURL= prompt("Image URL:", ''); // Get the title from the user
         let id = length;
+        let tagElement = prompt("Type one of the following tags for your entry: self, relation, extension, reflection, bliss");
         let tags = ["new"];
+        tags.push(tagElement);
         let newBlock = new myBlock(name, imageURL, proof, id, tags, currentDate);
         blocks.push(newBlock.toJSON());
         //blocks.write(name, proof, imageURL, id, tags);
