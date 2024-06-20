@@ -56,9 +56,7 @@ const TAGS = {
 const currentDate = new Date().toDateString();
 class myBlock {
     constructor(name,imageURL, proof, id,tags, date) {
-        blockDataPromise.then( blocks =>{
-            this.id = blocks.length;
-        });
+        this.id = id;
         this.name = name || "untitled.";
         this.proof = proof || "Inexplicable";
         this.imageURL = imageURL || "https://d2w9rnfcy7mm78.cloudfront.net/27416928/original_5c5fbc7fcb1fd0f6a0b65ae6bae53484.png?1712438925?bc=0";
@@ -99,6 +97,7 @@ function showCards() {
     //for(let i = 0; i < links.en)
     blockDataPromise.then( blocks =>{
         console.log("Fetched Data:",blocks);
+        console.log("LENGTH:" , blocks.length);
         blocks.forEach( block =>  {
 
             const newBlock = fromJSON(block);
@@ -172,8 +171,8 @@ function addCard()
         let proof = prompt("Proof:", ''); // Get the title from the user
         let imageURL= prompt("Image URL:", ''); // Get the title from the user
         let id = length;
-        let tags = "";
-        let newBlock = new myBlock(name, proof, imageURL,id, tags, currentDate);
+        let tags = ["new"];
+        let newBlock = new myBlock(name, imageURL, proof, id, tags, currentDate);
         blocks.push(newBlock.toJSON());
         //blocks.write(name, proof, imageURL, id, tags);
         showCards();
