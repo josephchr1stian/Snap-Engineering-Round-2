@@ -167,13 +167,12 @@ function addCard()
 
     blockDataPromise.then( blocks =>{
         let length = blocks.length;
-        let name  = prompt("Tile title", 'untitled.'); // Get the title from the user
-        let proof = prompt("Proof:", ''); // Get the title from the user
-        let imageURL= prompt("Image URL:", ''); // Get the title from the user
+        let name  = prompt("Title", 'untitled'); // Get the title from the user
+        let proof = prompt("Description:", ''); // Get the description from the user
+        let imageURL= prompt("Image URL:", ''); // Get the image url from the user
         let id = length;
-        let tagElement = prompt("Type one of the following tags for your entry: self, relation, extension, reflection, bliss");
-        let tags = ["new"];
-        tags.push(tagElement);
+        let tagElements = prompt("Type one or more of the tags for your entry: \n\n self, relaxation, extension, reflection, bliss. \n \n Separate by using a comma and a space.");
+        let tags = tagElements.split(", ");
         let newBlock = new myBlock(name, imageURL, proof, id, tags, currentDate);
         blocks.push(newBlock.toJSON());
         //blocks.write(name, proof, imageURL, id, tags);
