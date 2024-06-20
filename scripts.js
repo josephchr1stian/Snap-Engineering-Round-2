@@ -136,7 +136,7 @@ function editCardContent(card, block) {
     // You can use console.log to help you debug!
     // View the output by right-clicking on your website,
     // select "Inspect", then click on the "Console" tab
-    console.log("new card:", block.name, "- html: ", card);
+    // console.log("new card:", block.name, "- html: ", card);
 }
 
 // This calls the addCards() function when the page is first loaded
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", showCards);
 
 function quoteAlert()
 {
-    console.log("quote button clicked")
+    // console.log("quote button clicked")
     alert("The only way out, is through");
 }
 
@@ -199,11 +199,11 @@ function filterCards(filter) {
     const templateCard = document.querySelector(".card");
     //for(let i = 0; i < links.en)
     blockDataPromise.then( blocks =>{
-        console.log("Fetched Data:",blocks);
+        // console.log("Fetched Data:",blocks);
         blocks.forEach( block =>  {
 
             const newBlock = fromJSON(block);
-            console.log("Block is :", newBlock.name,"Tags are:" ,newBlock.tags, "Filter selected:", filter)
+            // console.log("Block is :", newBlock.name,"Tags are:" ,newBlock.tags, "Filter selected:", filter)
             if (newBlock.tags.includes(filter))
             {
                 const nextCard = templateCard.cloneNode(true); // Copy the template card
@@ -223,10 +223,10 @@ function showRandom()
     cardContainer.innerHTML = "";
     const templateCard = document.querySelector(".card");
     let target =  Math.floor(Math.random() * 10);
-    console.log(target);
+    // console.log(target);
     //for(let i = 0; i < links.en)
     blockDataPromise.then( blocks =>{
-        console.log("Fetched Data:",target, "HEELLLLLLLLLPLPPPPPPPPPPPPP");
+        // console.log("Fetched Data:",target, "HEELLLLLLLLLPLPPPPPPPPPPPPP");
         blocks.forEach( block =>  {
             if (block.id == target)
             {
@@ -237,7 +237,7 @@ function showRandom()
             }
         });
     }).catch(error => {
-        console.error("Error Fetching", error);
+        // console.error("Error Fetching", error);
     })
 
 }
@@ -251,13 +251,13 @@ document.addEventListener('DOMContentLoaded', function()
     {
         hamburgerMenu.addEventListener('click', function ()
         {
-            console.log("hamClick");
-            console.log(randomButton.style.display);
+            // console.log("hamClick");
+            // console.log(randomButton.style.display);
             if(randomButton.style.display === '' || dropDown.style.display === '' )
             {
                 randomButton.style.display = 'flex';
                 dropDown.style.display = 'flex';
-                console.log(randomButton.style.display);
+                // console.log(randomButton.style.display);
                 //hamburgerMenu.style.display = 'none';
             }
             else
